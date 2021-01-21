@@ -1,3 +1,3 @@
-#App created in React.
+# App created in React.
 
-Backend was prepared by Mateusz Domański.
+### Backend was prepared by Mateusz Domański.
