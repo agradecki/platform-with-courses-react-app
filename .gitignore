@@ -1,0 +1,5 @@
+backend-platform-with-courses/node_modules
+platform-with-courses-react-app/node_modules
+platform-with-courses-react-app/.vscode
+build
+.vscode
