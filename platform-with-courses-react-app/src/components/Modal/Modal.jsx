@@ -27,7 +27,7 @@ const Modal = ({
       modal.showModal();
     } else if (previousActiveElement.current) {
       modal.close();
-      previousActiveElement.focus();
+      previousActiveElement.focus;
     }
   }, [isOpen]);
 
