@@ -1,5 +1,7 @@
 import React from "react";
 
+import { HashRouter as Router } from "react-router-dom";
+
 import Header from "./components/Header/Header";
 import StoreProvider from "./store/StoreProvider";
 
@@ -8,6 +10,10 @@ import "./App.scss";
 const App = () => (
   <StoreProvider>
     <Header />
+    <Router>
+      <div className="contentWrapper"></div>
+      <AsideMenu />
+    </Router>
   </StoreProvider>
 );
 
