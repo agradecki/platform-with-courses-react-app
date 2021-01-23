@@ -13,8 +13,9 @@ const App = () => (
   <StoreProvider>
     <Header />
     <Router>
-      <div className="contentWrapper"></div>
-      <AsideMenu />
+      <div className="content-wrapper">
+        <AsideMenu />
+      </div>
     </Router>
   </StoreProvider>
 );
