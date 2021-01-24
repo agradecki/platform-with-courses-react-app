@@ -1,0 +1,16 @@
+.courses {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
