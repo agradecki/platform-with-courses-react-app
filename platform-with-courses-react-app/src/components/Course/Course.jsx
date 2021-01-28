@@ -34,8 +34,8 @@ const Course = ({ authors, id, isUserContext = false, img, price, title }) => {
   const shouldBeBuyButtonVisible = isUserLogged && !isUserContext;
 
   return (
-    <li className={style()}>
-      <article>
+    <li>
+      <article className={style()}>
         <h3 className={style("title")}></h3>
         <img alt={title} className={style("image")} src={img} />
         <p className={style("price")}>{`Koszt kursu: ${price}zł`}</p>
