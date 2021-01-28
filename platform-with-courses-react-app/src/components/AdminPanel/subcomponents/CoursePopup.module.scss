@@ -1,6 +1,7 @@
 .course-popup {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
 
   &__form {
     display: flex;

@@ -39,7 +39,7 @@ const CoursePopup = ({
       authors: formAuthors,
       id,
       img: formImg,
-      price: formPrice,
+      price: Number(formPrice),
       title: formTitle,
     };
 
@@ -147,7 +147,7 @@ const CoursePopup = ({
           </button>
         </form>
         <p>Lista autorów:</p>
-        <ul>{authorsElements}</ul>
+        <ul className={style()}>{authorsElements}</ul>
       </div>
     </Modal>
   );

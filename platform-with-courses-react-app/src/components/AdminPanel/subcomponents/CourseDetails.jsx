@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import request from "../../../helpers/request";
 import { StoreContext } from "../../../store/StoreProvider";
+import CoursePopup from "./CoursePopup";
 
 const CourseDetails = (props) => {
   const [isOpenPopup, setIsOpenPopup] = useState(false);
@@ -9,8 +10,12 @@ const CourseDetails = (props) => {
   const { id, title } = props;
 
   const showPopup = () => setIsOpenPopup(true);
+
   const hidePopup = (e) => {
-    e.preventDefault();
+    if (e) {
+      e.preventDefault();
+    }
+
     setIsOpenPopup(false);
   };
 
@@ -31,6 +36,7 @@ const CourseDetails = (props) => {
       <summary>{title}</summary>
       <button onClick={showPopup}>Edytuj</button>
       <button onClick={handleDeleteCourse}>Usuń</button>
+      <CoursePopup hidePopup={hidePopup} isOpenPopup={isOpenPopup} {...props} />
     </details>
   );
 };
